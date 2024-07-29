@@ -1,0 +1,268 @@
+/* inter font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+/* Dancing script */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+/* default designs */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Inter", sans-serif;
+    background-color: rgba(17, 17, 17, 1);
+    /* background-color: coral; */
+}
+.middle{
+    margin: 59px 190px;
+}
+/* common designs */
+.dflex{
+    display: flex;
+}
+.tomato{
+    color: #E6533C;
+}
+.btn{
+    background-color: #E6533C;
+    color: white;
+    border-radius: 39px;
+    text-align: center;
+}
+.box{
+    height: 96px;
+    width: 206px;
+    border: none;
+    border-radius: 12px; 
+    background-blend-mode: overlay;
+    background-color: rgba(128, 128, 128, 0.205);
+    color: white;
+}
+/* navbar */
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-logo{
+    font-size: 36px;
+    font-weight: 800;   
+}
+.navbar-links {
+    width: 465px;
+    justify-content: space-between;
+    border: 1px solid gray;
+    border-radius: 39px;
+    padding: 8px 12px;
+}
+.navbar-links a{
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+    padding-top: 7px;
+}
+.home{
+    width: 92px;
+    height: 38px;
+}
+.ham-burger{
+    display: none;
+}
+/* header */
+.header-container{
+    height: 200px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25%;
+}
+.header-left{
+    width: 50%;
+    height: 100%;
+}
+ .header-title{
+    font-size: 78px;
+    font-weight: mixed;
+    color: white;
+ }
+ .shape{
+    font-family: "Dancing Script", cursive;
+ }
+ .header-sub-title{
+    margin: 28px 0;
+    color: white;
+ }
+ .btn-join{
+    width: 224px;
+    height: 54px;
+    border: none;
+    font-weight: 600;
+    font-size: 18px;
+ }
+ .btn-download{
+    color: white;
+    border-radius: 39px;
+    text-align: center;
+    border: 1px solid white;
+    font-weight: 600;
+    font-size: 18px;
+    background-color: black;
+ }
+ .header-right{
+    width: 50%;
+    height: 100%;
+}
+.header-img{
+    position: relative;
+    top: -50px;
+    left: 200px;
+}
+.btn-left{
+    position: relative;
+    top: -150px;
+    left: 70px;
+    align-items: center;
+    justify-content: center;
+}
+.btn-left-circle{
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    background-color:  #E6533C;
+    margin-right: 10px;
+}
+.btn-right{
+    position: relative;
+    top: -500px;
+    left: 400px;
+}
+/* ------main starts------ */
+/* habit */
+.habit-section{
+    height: 525px;
+    color: white;
+}
+.habits-title{
+    text-align: center;
+    margin: 0 187px;
+}
+.habit-title{
+    font-size: 48px;
+    font-weight: 900;
+}
+.habit-sub-title{
+    font-size: 14px;
+}
+.habits-content{
+    height: 347px;
+    margin-top: 58px;
+    justify-content: space-between;
+}
+.habits-content-body{
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.habits-content-body-img{
+    height: 180px;
+    border-radius: 100px;
+}
+.habits-content-body-h3{
+    font-size: 18px;
+    margin-top: 30px;
+}
+.habits-content-body-p{
+    font-size: 18px;
+    text-align: justify;
+    margin-top: 5px;
+}
+/* *******************************RESPONSIVE***************************************************** */
+@media screen and (max-width:576px){
+    /* navbar */
+    .middle{
+        margin: 52px 20px;
+    }
+    .navbar{
+        justify-content: space-between;
+    }
+    .navbar-links{
+        display: none;
+    }
+    .ham-burger{
+        display: block;
+        color: white;
+    }
+    /* header */
+    .header-container{
+        width: 338px;
+        height: 1398px;
+        flex-direction: column;
+    }
+    .header-left{
+        width: 100%;
+    }
+    .header-title{
+        font-size: 36px;
+        padding-right: 150px;
+        text-align: justify;
+    }
+    .header-sub-title{
+        font-size: 16px;
+        padding-right: 150px;
+        text-align: justify;
+    }
+    .btn-fam{
+        display: flex;
+    }
+    .btn-join{
+        width: 124px;
+        height: 44px;
+        font-size: 10px;
+        margin-right: 5px;
+     }
+     .header-right{
+        width: 100%;
+        height: 588px;
+    }
+    .header-img{
+        top: -30px;
+        left: 50px;
+    }
+    .btn-left{
+        top: -1350;
+        left: 0;
+    }
+    .btn-right{
+        top: -640px;
+        left: 180px;
+    }
+    /* ------main starts------ */
+    /* habit */
+    .habit-section{
+        height: 1350px;
+        width: 338px;
+        color: white;
+    }
+    .habits-title{
+        text-align: left;
+        width: 100%;
+        margin: 0;
+    }
+    .habit-title{
+        font-size: 32px;
+    }
+    .habits-content{
+        height: 1125px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .habits-content-body{
+        width: 231px;
+        height: 274px;
+    }
+    .habits-content-body-h3{
+        margin-top: 10px;
+    }
+    .habits-content-body-p{
+        font-size: 14px;
+    }
+}
